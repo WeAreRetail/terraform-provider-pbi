@@ -1,9 +1,9 @@
 # Inspiration: https://github.com/devcontainers/templates/blob/main/src/go-postgres/.devcontainer/Dockerfile
-ARG GO_VARIANT=1.21-bullseye
+ARG GO_VARIANT=1.23-bookworm
 FROM mcr.microsoft.com/devcontainers/go:1-${GO_VARIANT}
 
 ARG REMOTE_USER=vscode
-ARG DELVE_VERSION=1.21.2
+ARG DELVE_VERSION=1.24.0
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
